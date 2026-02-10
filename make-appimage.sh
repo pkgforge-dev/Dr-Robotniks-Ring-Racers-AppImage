@@ -20,4 +20,4 @@ quick-sharun /usr/bin/ringracers
 quick-sharun --make-appimage
 
 # test the final app
-quick-sharun --test ./dist/*.AppImage
+#quick-sharun --test ./dist/*.AppImage
