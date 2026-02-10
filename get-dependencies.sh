@@ -19,6 +19,7 @@ get-debloated-pkgs --add-common --prefer-nano
 
 # Comment this out if you need an AUR package
 make-aur-package ringracers-data
+make-aur-package ringracers
 
 # If the application needs to be manually built that has to be done down here
 
