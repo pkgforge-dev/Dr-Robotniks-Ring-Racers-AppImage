@@ -3,7 +3,7 @@
 # Dr-Robotniks-Ring-Racers-AppImage 🐧
 
 [![GitHub Downloads](https://img.shields.io/github/downloads/pkgforge-dev/Dr-Robotniks-Ring-Racers-AppImage/total?logo=github&label=GitHub%20Downloads)](https://github.com/pkgforge-dev/Dr-Robotniks-Ring-Racers-AppImage/releases/latest)
-[![CI Build Status](https://github.com//pkgforge-dev/Dr-Robotniks-Ring-Racers-AppImage/actions/workflows/appimage.yml/badge.svg)](https://github.com/pkgforge-dev/Dr-Robotniks-Ring-Racers-AppImage/releases/latest)
+[![CI Build Status](https://github.com/pkgforge-dev/Dr-Robotniks-Ring-Racers-AppImage/actions/workflows/appimage.yml/badge.svg)](https://github.com/pkgforge-dev/Dr-Robotniks-Ring-Racers-AppImage/releases/latest)
 [![Latest Stable Release](https://img.shields.io/github/v/release/pkgforge-dev/Dr-Robotniks-Ring-Racers-AppImage)](https://github.com/pkgforge-dev/Dr-Robotniks-Ring-Racers-AppImage/releases/latest)
 
 <p align="center">
