@@ -11,7 +11,7 @@ export UPINFO="gh-releases-zsync|${GITHUB_REPOSITORY%/*}|${GITHUB_REPOSITORY#*/}
 export ICON=/usr/share/pixmaps/org.kartkrew.RingRacers.png
 export DESKTOP=/usr/share/applications/org.kartkrew.RingRacers.desktop
 export STARTUPWMCLASS=ringracers
-export DEPLOY_OPENGL=1
+export USE_HOST_DRIVERS_EXPERIMENTAL=1
 
 # Deploy dependencies
 quick-sharun /usr/bin/ringracers
