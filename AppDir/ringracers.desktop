@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=Dr. Robotnik's Ring Racers
+Comment=This is Racing at the Next Level
+TryExec=ringracers
+Exec=ringracers
+Icon=srb2
+StartupWMClass=ringracers
+Terminal=false
+Categories=Game;
