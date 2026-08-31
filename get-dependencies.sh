@@ -11,7 +11,6 @@ pacman -Syu --noconfirm \
     libvpx \
     libyuv \
     ninja  \
-    opus \
     sdl2
 
 echo "Installing debloated packages..."
