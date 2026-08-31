@@ -47,4 +47,4 @@ cmake -G Ninja -B build \
     -DSRB2_SDL2_EXE_NAME=ringracers \
     -DACSVM_INSTALL_LIB=OFF
 cmake --build build -j$(nproc)
-mv -v bin/ringracers ../AppDir/bin
+mv -v build/bin/ringracers ../AppDir/bin
