@@ -7,7 +7,7 @@
 [![Latest Stable Release](https://img.shields.io/github/v/release/pkgforge-dev/Dr-Robotniks-Ring-Racers-AppImage)](https://github.com/pkgforge-dev/Dr-Robotniks-Ring-Racers-AppImage/releases/latest)
 
 <p align="center">
-  <img src="https://github.com/KartKrewDev/RingRacers/blob/master/srb2.png" width="128" />
+  <img src="https://raw.githubusercontent.com/KartKrewDev/RingRacers/refs/heads/master/srb2.png" width="128" />
 </p>
 
 
