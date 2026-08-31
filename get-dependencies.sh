@@ -46,5 +46,5 @@ cmake ./ -G Ninja -Wno-dev \
     -DSRB2_CONFIG_DEV_BUILD=OFF \
     -DSRB2_SDL2_EXE_NAME="ringracers" \
     -DACSVM_INSTALL_LIB=OFF
-cmake --build build -j$(nproc)
+make -j$(nproc)
 mv -v bin/ringracers ../AppDir/bin
