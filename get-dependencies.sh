@@ -29,8 +29,8 @@ git clone --branch "$VERSION" "$REPO" ./RingRacers
 VERSION_NOV="${VERSION#v}"
 echo "$VERSION_NOV" > ~/version
 
-# AssetsLinuxOnly.zip from same latest tag
-curl -L -o Dr.Robotnik.s-Ring-Racers-${VERSION}-Asset.zip \
+# Assets zip from same latest tag
+curl -L -o Dr.Robotnik.s-Ring-Racers-${VERSION}-Assets.zip \
   "https://github.com/KartKrewDev/RingRacers/releases/download/$VERSION/Dr.Robotnik.s-Ring-Racers-${VERSION}-Assets.zip"
 
 mkdir -p ./AppDir/bin
