@@ -9,7 +9,9 @@ echo "---------------------------------------------------------------"
 pacman -Syu --noconfirm \
     cmake  \
     libvpx \
+    libyuv \
     ninja  \
+    opus \
     sdl2
 
 echo "Installing debloated packages..."
