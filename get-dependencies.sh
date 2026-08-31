@@ -39,7 +39,7 @@ bsdtar -xvf Dr.Robotnik.s-Ring-Racers-${VERSION}-Assets.zip -C ./AppDir/share/ga
 
 cd ./RingRacers
 export CXXFLAGS="${CXXFLAGS:-} -Wp,-U_GLIBCXX_ASSERTIONS"
-cmake -G Ninja -Wno-dev -B build \
+cmake ./ -G Ninja -Wno-dev \
     -DCMAKE_BUILD_TYPE='Release' \
     -DCMAKE_C_FLAGS="-g1 -O3" \
     -DCMAKE_CXX_FLAGS=-"g1 -O3 -fpermissive" \
@@ -47,4 +47,4 @@ cmake -G Ninja -Wno-dev -B build \
     -DSRB2_SDL2_EXE_NAME="ringracers" \
     -DACSVM_INSTALL_LIB=OFF
 cmake --build build -j$(nproc)
-mv -v build/ringracers ../AppDir/bin
+mv -v bin/ringracers ../AppDir/bin
