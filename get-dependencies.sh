@@ -29,12 +29,12 @@ VERSION_NOV="${VERSION#v}"
 echo "$VERSION_NOV" > ~/version
 
 # AssetsLinuxOnly.zip from same latest tag
-curl -L -o AssetsLinuxOnly.zip \
-  "https://github.com/STJr/Kart-Public/releases/download/$VERSION/AssetsLinuxOnly.zip"
+curl -L -o Dr.Robotnik.s-Ring-Racers-$VERSION-Asset.zip \
+  "https://github.com/KartKrewDev/RingRacers/releases/download/$VERSION/Dr.Robotnik.s-Ring-Racers-$VERSION-Assets.zip"
 
 mkdir -p ./AppDir/bin
-mkdir -p ./AppDir/share/games/SRB2Kart
-bsdtar -xvf AssetsLinuxOnly.zip -C ./AppDir/share/games/SRB2Kart
+mkdir -p ./AppDir/share/games/RingRacers
+bsdtar -xvf Dr.Robotnik.s-Ring-Racers-$VERSION-Assets.zip -C ./AppDir/share/games/RingRacers
 
 cd ./RingRacers
 export CXXFLAGS="${CXXFLAGS:-} -Wp,-U_GLIBCXX_ASSERTIONS"
