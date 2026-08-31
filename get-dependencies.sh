@@ -17,10 +17,6 @@ echo "Installing debloated packages..."
 echo "---------------------------------------------------------------"
 get-debloated-pkgs --add-common --prefer-nano libdecor-mini
 
-# Comment this out if you need an AUR package
-#make-aur-package ringracers-data
-#make-aur-package ringracers
-
 echo "Building stable version of Ring Racers..."
 echo "---------------------------------------------------------------"
 REPO="https://github.com/KartKrewDev/RingRacers"
