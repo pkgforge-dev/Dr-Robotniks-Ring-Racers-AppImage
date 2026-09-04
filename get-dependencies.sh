@@ -10,7 +10,6 @@ pacman -Syu --noconfirm \
     cmake  \
     libvpx \
     libyuv \
-    ninja  \
     sdl2
 
 echo "Installing debloated packages..."
@@ -35,7 +34,7 @@ bsdtar -xvf Dr.Robotnik.s-Ring-Racers-${VERSION}-Assets.zip -C ./AppDir/share/ga
 
 cd ./RingRacers
 export CXXFLAGS="${CXXFLAGS:-} -Wp,-U_GLIBCXX_ASSERTIONS"
-cmake -G Ninja -B build \
+cmake -B build \
     -DCMAKE_BUILD_TYPE=Release \
     -DCMAKE_C_FLAGS="-g1 -O3" \
     -DCMAKE_CXX_FLAGS=-"g1 -O3 -fpermissive" \
