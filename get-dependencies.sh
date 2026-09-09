@@ -20,7 +20,7 @@ echo "Building stable version of Ring Racers..."
 echo "---------------------------------------------------------------"
 REPO="https://github.com/KartKrewDev/RingRacers"
 VERSION="$(curl -sL https://api.github.com/repos/KartKrewDev/RingRacers/releases/latest | grep '"tag_name"' | head -1 | cut -d '"' -f 4)"
-git clone --branch "$VERSION" "$REPO" ./RingRacers
+git clone --branch "$VERSION" --depth 1 "$REPO" ./RingRacers
 VERSION_NOV="${VERSION#v}"
 echo "$VERSION_NOV" > ~/version
 
