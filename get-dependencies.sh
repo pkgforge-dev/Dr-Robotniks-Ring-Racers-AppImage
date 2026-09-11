@@ -6,11 +6,7 @@ ARCH=$(uname -m)
 
 echo "Installing package dependencies..."
 echo "---------------------------------------------------------------"
-pacman -Syu --noconfirm \
-    cmake  \
-    libvpx \
-    libyuv \
-    sdl2
+pacman -Syu --noconfirm cmake libvpx libyuv sdl2-compat
 
 echo "Installing debloated packages..."
 echo "---------------------------------------------------------------"
