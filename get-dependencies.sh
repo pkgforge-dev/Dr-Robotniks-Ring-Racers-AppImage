@@ -28,9 +28,8 @@ mkdir -p ./AppDir/bin
 mkdir -p ./AppDir/share/games/RingRacers
 bsdtar -xvf Dr.Robotnik.s-Ring-Racers-${VERSION}-Assets.zip -C ./AppDir/share/games/RingRacers
 
-cd ./RingRacers
 export CXXFLAGS="${CXXFLAGS:-} -Wp,-U_GLIBCXX_ASSERTIONS"
-cmake -B build \
+cmake -S ./RingRacers -B build \
     -DCMAKE_BUILD_TYPE=Release \
     -DCMAKE_C_FLAGS="-g1 -O3" \
     -DCMAKE_CXX_FLAGS=-"g1 -O3 -fpermissive" \
@@ -38,4 +37,4 @@ cmake -B build \
     -DSRB2_SDL2_EXE_NAME=ringracers \
     -DACSVM_INSTALL_LIB=OFF
 cmake --build build -j$(nproc)
-mv -v build/bin/ringracers ../AppDir/bin
+mv -v build/bin/ringracers ./AppDir/bin
